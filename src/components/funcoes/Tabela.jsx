@@ -44,7 +44,7 @@ function Tabela ({ alerta, atualizaAlerta }) {
                         <tr>
                             <th scope="col">Código</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Características</th>
+                            <th scope="col">Característica</th>
                             <th scope="col"></th>
                             <th scope="col"></th>
                         </tr>
