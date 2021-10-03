@@ -7,16 +7,20 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Menu from './components/Menu';
 import Home from './components/Home';
 import Funcao from './components/funcoes/Funcao';
+import Campeao from './components/campeoes/Campeao';
 
 function App() {
   return (
     <Router>
         <Menu/>
         <Switch>
-            <Route exact path="/" render={Home} />
+            <Route exact path="/" render={ () => <Home/>}/>     
             <Route exact path="/funcoes" render={ () =>
               <Funcao/>
             } />
+            <Route exact path="/campeoes" render={ () => 
+              <Campeao/>
+            } /> 
         </Switch>
     </Router>
   );
